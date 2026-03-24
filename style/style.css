@@ -100,7 +100,11 @@ p {
 @media (max-width:600px) {
 
     .main_container {
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 2fr 6fr;
+
+        grid-template-areas:
+            "nav article";
     }
 
     .main_nav {
